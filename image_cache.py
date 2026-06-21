@@ -22,7 +22,7 @@ import aiohttp
 logger = logging.getLogger("manhwaflix.cache")
 
 # ── Config ──────────────────────────────────────────────────────────────────
-BASE_DIR   = Path(os.environ.get("MFX_CACHE_DIR", "/var/cache/manhwaflix"))
+BASE_DIR   = Path(os.environ.get("MFX_CACHE_DIR", "/tmp/manhwaflix"))
 IMG_DIR    = BASE_DIR / "images"
 INDEX_FILE = BASE_DIR / "index.json"
 
